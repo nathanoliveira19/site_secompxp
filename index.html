@@ -81,7 +81,7 @@
 
                     <div class="center aligned four wide column ">
                         <div class="ui medium image centered">
-                            <img src="assets/images/escola.jpg">
+                            <img src="assets/images/escola.jpg" id="imgEscola" hidden="true">
                         </div>
                     </div>
                     <div class="twelve wide column" id="escola_content">
@@ -102,7 +102,7 @@
                 <div class="ui mobile only middle aligned grid">
                     <div class="row">
                         <div class="ui medium image centered">
-                            <img src="assets/images/escola.jpg">
+                            <img src="assets/images/escola.jpg" id="imgEscola">
                         </div>
                     </div>
                     <div class="centered" id="escola_content">
@@ -128,9 +128,9 @@
             <div class="ui segment">
                 <div class="ui computer tablet only middle aligned grid">
 
-                    <div class="center aligned four wide column ">
+                    <div class="center aligned four wide column">
                         <div class="ui medium image centered">
-                            <img src="assets/images/jessica.jpg">
+                            <img src="assets/images/jessica.jpg" id="imgJessica">
                         </div>
                     </div>
 
@@ -189,7 +189,7 @@
                 <div class="ui mobile only middle aligned grid">
                     <div class="row">
                         <div class="ui medium image centered">
-                            <img src="assets/images/jessica.jpg">
+                            <img src="assets/images/jessica.jpg" id="imgJessica">
                         </div>
                     </div>
 
@@ -257,19 +257,21 @@
                             <div class="center aligned sixteen wide column">
                                 <h3>Equipe</h3>
                                 <div class="ui centered big image">
-                                    <img src="assets/images/equipe1.jpg">
+                                    <img src="assets/images/equipe1.jpg" id="imgEquipe">
                                 </div>
                             </div>
                         </div>
                         <div class="center aligned row">
                             <div class="sixteen wide column" id="agradecimento_content">
                                 <h3>Agradecimentos  Especiais</h3>
-                                <div class="ui bulleted list">
+                                <div class="ui horizontal list">
                                     <div class="item">Cassiano Maia</div>
                                     <div class="item">Felipe Sampaio</div>
                                     <div class="item">Guilherme Servidoni</div>
                                     <div class="item">João Augusto Leite</div>
                                     <div class="item">Pedro Migliatti</div>
+                                </div>    
+                                <div class="ui horizontal list">    
                                     <div class="item">Rebeca Lima Rocha</div>
                                     <div class="item">Thayse Oliveira</div>
                                     <div class="item">Túlio Campos</div>
@@ -284,24 +286,28 @@
                         <div class="centered row">
                                 <h3>Equipe</h3>
                                 <div class="ui centered large image">
-                                    <img src="assets/images/equipe1.jpg">
+                                    <img src="assets/images/equipe1.jpg" id="imgEquipe">
                                 </div>
                         </div>
 
                         <div class="center aligned row">
                             <div class="sixteen wide column" id="agradecimento_content">
                                 <h3>Agradecimentos  Especiais</h3>
-                                <div class="ui bulleted list">
+                                <div class="ui horizontal list">
+                                    <div class="ui horizontal list">
                                     <div class="item">Cassiano Maia</div>
                                     <div class="item">Felipe Sampaio</div>
                                     <div class="item">Guilherme Servidoni</div>
                                     <div class="item">João Augusto Leite</div>
                                     <div class="item">Pedro Migliatti</div>
+                                </div>    
+                                <div class="ui horizontal list">    
                                     <div class="item">Rebeca Lima Rocha</div>
                                     <div class="item">Thayse Oliveira</div>
                                     <div class="item">Túlio Campos</div>
                                     <div class="item">Vinícius Sanches</div>
                                     <div class="item">Yuri Lovalho</div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -483,6 +489,37 @@
 </div>
 
 <script type="text/javascript">
+
+    $('#imgEscola')
+    .transition({
+        animation: 'slide right',
+        duration: 100
+    })
+    .transition({
+        animation: 'slide right',
+        duration: 1000
+    })
+
+    $('#imgJessica')
+    .transition({
+        animation: 'slide right',
+        duration: 100
+    })
+    .transition({
+        animation: 'slide right',
+        duration: 1000
+    })
+
+    $('#imgEquipe')
+    .transition({
+        animation: 'slide down',
+        duration: 100
+
+    })
+    .transition({
+        animation: 'slide down',
+        duration: 1000
+    });
 
     $('#sobre_content').hide();
     $('#objetivos_content').hide();
