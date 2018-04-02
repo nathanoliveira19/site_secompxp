@@ -16,27 +16,27 @@ particlesJS('particles-js',
     {
         "particles": {
             "number": {
-                "value": 35,
+                "value": 50,
                 "density": {
                     "enable": true,
                     "value_area": 900
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": "#59ff8b"
             },
             "shape": {
-                "type": "circle",
+                "type": "polygon",
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
                 },
                 "polygon": {
-                    "nb_sides": 3
+                    "nb_sides": 5
                 }
             },
             "opacity": {
-                "value": 0.4,
+                "value": 0.1,
                 "random": true,
                 "anim": {
                     "enable": false,
@@ -46,8 +46,8 @@ particlesJS('particles-js',
                 }
             },
             "size": {
-                "value": 2,
-                "random": false,
+                "value": 10,
+                "random": true,
                 "anim": {
                     "enable": false,
                     "speed": 40,
@@ -56,7 +56,7 @@ particlesJS('particles-js',
                 }
             },
             "line_linked": {
-                "enable": true,
+                "enable": false,
                 "distance": 250,
                 "color": "#ffffff",
                 "opacity": 0.5,
@@ -65,9 +65,9 @@ particlesJS('particles-js',
             "move": {
                 "enable": true,
                 "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
+                "direction": "top-right",
+                "random": true,
+                "straight": true,
                 "out_mode": "out",
                 "bounce": false,
                 "attract": {
@@ -81,11 +81,11 @@ particlesJS('particles-js',
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "grab"
                 },
                 "onclick": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "repulse"
                 },
                 "resize": true
