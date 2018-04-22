@@ -29,6 +29,10 @@
 #realizacao{
 }
 
+.ruler{
+	color:rgba(0,0,0,0.1);
+}
+
 .slides{
     max-width: 666px;
     position: relative;
@@ -42,6 +46,7 @@
 
 .imagem{
     width: 100%;
+	border-radius: 5px;
 }
 
 .number{
@@ -106,11 +111,11 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
